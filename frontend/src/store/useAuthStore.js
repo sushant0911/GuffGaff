@@ -5,7 +5,7 @@ import { io } from "socket.io-client";
 
 const BASE_URL =
   (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_SOCKET_URL)
-    || (import.meta.env.MODE === "development" ? "http://localhost:5001" : "https://guffgaff-backend-s983.onrender.com");
+    || (import.meta.env.MODE === "development" ? "http://localhost:5001" : "https://guff-gaff-backend.vercel.app");
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
